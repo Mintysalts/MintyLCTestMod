@@ -18,8 +18,12 @@ namespace MintyTestMod.Patches
         {
             ___sprintMeter = 1f;
         }
-        
 
+        [HarmonyPrefix]
+        static void Jump2xIncreasePatch(ref float ___jumpForce)
+        {
+            ___jumpForce = 10f; 
+        }
      
     }
 }
