@@ -32,7 +32,7 @@ namespace MintyTestMod
 
             mls = BepInEx.Logging.Logger.CreateLogSource(modGUID);
 
-            mls.LogInfo("This test mod as awaken :>");
+            mls.LogInfo("This test mod as awaken :> Githubtest");
 
             harmony.PatchAll(typeof(MintyTestMod));
             harmony.PatchAll(typeof(PlayerControllerBPatch));
