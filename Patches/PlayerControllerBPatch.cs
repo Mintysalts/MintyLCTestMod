@@ -11,7 +11,7 @@ namespace MintyTestMod.Patches
     [HarmonyPatch(typeof(PlayerControllerB))]
     internal class PlayerControllerBPatch
     {
-
+        
         [HarmonyPatch("Update")]
         [HarmonyPostfix]
         static void infiniteSprintPatch(ref float ___sprintMeter)
@@ -19,10 +19,11 @@ namespace MintyTestMod.Patches
             ___sprintMeter = 1f;
         }
 
-        [HarmonyPrefix]
+        [HarmonyPatch("Update")]
+        [HarmonyPostfix]
         static void Jump2xIncreasePatch(ref float ___jumpForce)
         {
-            ___jumpForce = 10f; 
+            ___jumpForce = 40f; 
         }
      
     }

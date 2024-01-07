@@ -15,7 +15,7 @@ namespace MintyTestMod
     {
         private const string modGUID = "Minty.MintyTestMod";
         private const string modName = "Minty Test Mod";
-        private const string modVersion = "1.0.0.0";
+        private const string modVersion = "1.1.0.0";
 
         private readonly Harmony harmony = new Harmony(modGUID);
 
