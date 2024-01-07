@@ -23,7 +23,7 @@ namespace MintyTestMod.Patches
         [HarmonyPostfix]
         static void Jump2xIncreasePatch(ref float ___jumpForce)
         {
-            ___jumpForce = 40f; 
+            ___jumpForce = 20f; 
         }
      
     }
