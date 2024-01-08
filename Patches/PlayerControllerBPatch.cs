@@ -18,13 +18,5 @@ namespace MintyTestMod.Patches
         {
             ___sprintMeter = 1f;
         }
-
-        [HarmonyPatch("Update")]
-        [HarmonyPostfix]
-        static void Jump2xIncreasePatch(ref float ___jumpForce)
-        {
-            ___jumpForce = 20f; 
-        }
-     
     }
 }
